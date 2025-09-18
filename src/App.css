@@ -1,0 +1,453 @@
+/* React Calendar 커스터마이징 */
+.react-calendar {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: inherit;
+}
+
+.react-calendar__navigation {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 10px 10px 0 0;
+  padding: 15px;
+}
+
+.react-calendar__navigation button {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.react-calendar__navigation button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.react-calendar__month-view__weekdays {
+  background: #f8f9fa;
+  padding: 10px 0;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  color: #666;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.react-calendar__tile {
+  padding: 8px;
+  height: 60px;
+  position: relative;
+  border: 1px solid #e9ecef;
+}
+
+.react-calendar__tile:hover {
+  background: #f8f9fa;
+}
+
+.react-calendar__tile--active {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.react-calendar__tile--now {
+  background: #e3f2fd;
+  color: #1976d2;
+  font-weight: 600;
+}
+
+.calendar-events {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.calendar-event {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* 앱 컴포넌트 스타일 */
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.selected-date-info {
+  display: flex;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.today-events {
+  margin-bottom: 20px;
+}
+
+.today-events h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.event-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 4px 8px 4px 0;
+}
+
+.action-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.action-meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.category-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.category-badge.sat {
+  background-color: #ff6b6b;
+}
+
+.category-badge.ap {
+  background-color: #4ecdc4;
+}
+
+.category-badge.general {
+  background-color: #95a5a6;
+}
+
+.priority-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.tab-menu {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  color: #666;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.tab-button.active {
+  color: #667eea;
+  border-bottom-color: #667eea;
+  background-color: #f8f9fa;
+}
+
+.target-info, .subjects-info {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.target-info strong, .subjects-info strong {
+  color: #333;
+  margin-right: 8px;
+}
+
+/* 미국 입시 전형 안내 스타일 */
+.admissions-guide {
+  display: grid;
+  gap: 30px;
+}
+
+.admission-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.admission-type {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 4px solid #667eea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admission-type:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.type-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.type-header h3 {
+  color: #333;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.type-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.type-badge.binding {
+  background-color: #e74c3c;
+}
+
+.type-badge.non-binding {
+  background-color: #27ae60;
+}
+
+.type-badge.regular {
+  background-color: #3498db;
+}
+
+.type-badge.deferred {
+  background-color: #f39c12;
+}
+
+.type-content p {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+.type-content strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.timeline-section {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 25px;
+  border-left: 4px solid #667eea;
+}
+
+.timeline-section h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.timeline {
+  display: grid;
+  gap: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  min-width: 60px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-content h4 {
+  color: #333;
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.timeline-content p {
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.tips-section {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 25px;
+  border-left: 4px solid #667eea;
+}
+
+.tips-section h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.tip-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-2px);
+}
+
+.tip-card h4 {
+  color: #333;
+  margin: 0 0 15px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.tip-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tip-card li {
+  padding: 6px 0;
+  color: #666;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 20px;
+}
+
+.tip-card li::before {
+  content: "•";
+  color: #667eea;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.message-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+
+.message-box .icon {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .react-calendar__tile {
+    height: 50px;
+    padding: 4px;
+  }
+  
+  .calendar-event {
+    width: 4px;
+    height: 4px;
+  }
+  
+  .admission-types {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline-item {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .timeline-date {
+    min-width: auto;
+    align-self: flex-start;
+  }
+  
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tab-menu {
+    flex-wrap: wrap;
+  }
+  
+  .tab-button {
+    flex: 1;
+    min-width: 80px;
+  }
+}
