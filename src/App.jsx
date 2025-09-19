@@ -450,36 +450,43 @@ function App() {
               <div className="timeline-item">
                 <div className="timeline-date">11월</div>
                 <div className="timeline-content">
-                  <h4>ED/EA 마감</h4>
-                  <p>• 11월 1일: ED 마감<br/>• 11월 15일: EA 마감<br/>• 지원서 제출 완료</p>
+                  <h4>ED/EA/REA 마감</h4>
+                  <p>• 11월 1일: ED, REA 마감<br/>• 11월 15일: EA 마감<br/>• Rolling Admission 시작<br/>• 지원서 제출 완료</p>
                 </div>
               </div>
               <div className="timeline-item">
                 <div className="timeline-date">12월</div>
                 <div className="timeline-content">
-                  <h4>ED 결과 발표</h4>
-                  <p>• 12월 15일: ED 결과 발표<br/>• 합격/불합격/디퍼 통보<br/>• RD 지원 준비</p>
+                  <h4>ED/REA 결과 발표</h4>
+                  <p>• 12월 15일: ED, REA 결과 발표<br/>• 합격/불합격/디퍼 통보<br/>• Rolling Admission 결과 계속 발표<br/>• RD 지원 준비</p>
                 </div>
               </div>
               <div className="timeline-item">
                 <div className="timeline-date">1월</div>
                 <div className="timeline-content">
-                  <h4>RD 마감 & EA 결과</h4>
-                  <p>• 1월 1일: RD 마감<br/>• 1월 31일: EA 결과 발표<br/>• 추가 지원서 제출</p>
+                  <h4>RD/ED II 마감 & EA 결과</h4>
+                  <p>• 1월 1일: RD, ED II 마감<br/>• 1월 31일: EA 결과 발표<br/>• Rolling Admission 계속 진행<br/>• 추가 지원서 제출</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-date">2월</div>
+                <div className="timeline-content">
+                  <h4>ED II 결과 발표</h4>
+                  <p>• 2월 중순: ED II 결과 발표<br/>• Rolling Admission 계속 진행<br/>• 디퍼된 학생들 RD 재심사</p>
                 </div>
               </div>
               <div className="timeline-item">
                 <div className="timeline-date">3-4월</div>
                 <div className="timeline-content">
                   <h4>RD 결과 발표</h4>
-                  <p>• 3월 15일: RD 결과 발표 시작<br/>• 3월 28일: Ivy League 발표<br/>• 4월 1일: UC 시스템 발표</p>
+                  <p>• 3월 15일: RD 결과 발표 시작<br/>• 3월 28일: Ivy League 발표<br/>• 4월 1일: UC 시스템 발표<br/>• Waitlist 통보 시작</p>
                 </div>
               </div>
               <div className="timeline-item">
-                <div className="timeline-date">5월</div>
+                <div className="timeline-date">5-7월</div>
                 <div className="timeline-content">
-                  <h4>최종 결정</h4>
-                  <p>• 5월 1일: National Decision Day<br/>• 대학 등록 마감<br/>• 입학 보증금 납부</p>
+                  <h4>최종 결정 & Waitlist</h4>
+                  <p>• 5월 1일: National Decision Day<br/>• 대학 등록 마감<br/>• Waitlist에서 추가 합격<br/>• Rolling Admission 마무리</p>
                 </div>
               </div>
             </div>
