@@ -376,6 +376,58 @@ function App() {
                 <p><strong>대상:</strong> ED/EA 지원자 중 일부</p>
               </div>
             </div>
+
+            <div className="admission-type">
+              <div className="type-header">
+                <h3>🎯 Early Decision II (ED II)</h3>
+                <span className="type-badge binding">Binding</span>
+              </div>
+              <div className="type-content">
+                <p><strong>정의:</strong> ED와 동일한 구속력이 있지만 1월에 지원하는 전형</p>
+                <p><strong>특징:</strong> ED I에서 불합격한 학생들이 다른 대학에 지원 가능</p>
+                <p><strong>기간:</strong> 1월 1일 마감, 2월 중순 결과 발표</p>
+                <p><strong>대상:</strong> ED I에서 불합격한 학생들</p>
+              </div>
+            </div>
+
+            <div className="admission-type">
+              <div className="type-header">
+                <h3>🔒 Restrictive Early Action (REA)</h3>
+                <span className="type-badge restrictive">Restrictive</span>
+              </div>
+              <div className="type-content">
+                <p><strong>정의:</strong> 다른 사립대학 EA/ED에 동시 지원 불가한 제한적 조기 지원</p>
+                <p><strong>특징:</strong> 공립대학 EA는 지원 가능, 합격해도 입학 의무 없음</p>
+                <p><strong>기간:</strong> 11월 1일 마감, 12월 중순 결과 발표</p>
+                <p><strong>대상:</strong> 하버드, 예일, 프린스턴, 스탠포드 지원자</p>
+              </div>
+            </div>
+
+            <div className="admission-type">
+              <div className="type-header">
+                <h3>🔄 Rolling Admission</h3>
+                <span className="type-badge rolling">Rolling</span>
+              </div>
+              <div className="type-content">
+                <p><strong>정의:</strong> 지원서를 접수하는 대로 심사하여 결과를 발표하는 전형</p>
+                <p><strong>특징:</strong> 정해진 마감일 없음, 빠른 지원일수록 유리</p>
+                <p><strong>기간:</strong> 연중 상시 접수, 지원 후 2-4주 내 결과</p>
+                <p><strong>대상:</strong> 미시간 주립대, 인디애나 대학교 등</p>
+              </div>
+            </div>
+
+            <div className="admission-type">
+              <div className="type-header">
+                <h3>⏳ Waitlist (대기자 명단)</h3>
+                <span className="type-badge waitlist">Waitlist</span>
+              </div>
+              <div className="type-content">
+                <p><strong>정의:</strong> 합격도 불합격도 아닌 대기자 명단에 올라간 상태</p>
+                <p><strong>특징:</strong> 추가 합격자가 필요할 때 연락, Letter of Continued Interest 작성</p>
+                <p><strong>기간:</strong> 4월 통보, 5-7월까지 대기</p>
+                <p><strong>대상:</strong> RD 지원자 중 일부</p>
+              </div>
+            </div>
           </div>
 
           <div className="timeline-section">
@@ -466,6 +518,38 @@ function App() {
                   <li>추가 성과나 활동 업데이트</li>
                   <li>Letter of Continued Interest 작성</li>
                   <li>RD 지원서 더욱 완벽하게 준비</li>
+                </ul>
+              </div>
+              <div className="tip-card">
+                <h4>🎯 ED II 전략</h4>
+                <ul>
+                  <li>ED I에서 불합격 후 두 번째 기회</li>
+                  <li>더 신중하게 대학 선택하기</li>
+                  <li>1월까지 점수나 활동 업데이트</li>
+                </ul>
+              </div>
+              <div className="tip-card">
+                <h4>🔒 REA 전략</h4>
+                <ul>
+                  <li>하버드, 예일 등 명문대 지원 시</li>
+                  <li>공립대학 EA는 동시 지원 가능</li>
+                  <li>다른 사립대학 EA/ED는 불가</li>
+                </ul>
+              </div>
+              <div className="tip-card">
+                <h4>🔄 Rolling 전략</h4>
+                <ul>
+                  <li>가능한 한 빨리 지원하기</li>
+                  <li>안전한 대학으로 활용</li>
+                  <li>빠른 결과로 다른 대학 전략 수립</li>
+                </ul>
+              </div>
+              <div className="tip-card">
+                <h4>⏳ Waitlist 대응</h4>
+                <ul>
+                  <li>Letter of Continued Interest 작성</li>
+                  <li>추가 성과나 업데이트 제출</li>
+                  <li>다른 대학 등록 후에도 기다리기</li>
                 </ul>
               </div>
             </div>

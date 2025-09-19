@@ -257,6 +257,18 @@
   background-color: #f39c12;
 }
 
+.type-badge.restrictive {
+  background-color: #9c27b0;
+}
+
+.type-badge.rolling {
+  background-color: #00bcd4;
+}
+
+.type-badge.waitlist {
+  background-color: #607d8b;
+}
+
 .type-content p {
   margin: 8px 0;
   line-height: 1.6;
